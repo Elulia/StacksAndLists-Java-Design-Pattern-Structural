@@ -5,8 +5,9 @@ public class Main
 
 	public static void main(String[] args)
 	{
-		Stack<String> stack = new ArrayStack<String>();
-		new StackOfStringTester(stack).testStack();
+		List<String> liste = new ArrayList<String>();
+		Stack<String> liste2 = new ListAdapter(liste);
+		new StackOfStringTester(liste2).testStack();
 	}
 
 }
